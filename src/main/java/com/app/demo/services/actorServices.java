@@ -1,6 +1,7 @@
 package com.app.demo.services;
 
 import java.util.ArrayList;
+import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -21,5 +22,15 @@ public class actorServices {
         return actorRepositori.save(actor);
     }
 
-    
+    public Optional<actorModel> findById(Long id) {
+        return null;
+    }
+
+    public Optional<actorModel> obtenerPorId(Long id){
+        return actorRepositori.findById(id);
+    }
+
+    public ArrayList<actorModel> obtenerPorPrioridad(Integer prioridad){
+        return actorRepositori.findByPrioridad(prioridad);
+    }
 }
