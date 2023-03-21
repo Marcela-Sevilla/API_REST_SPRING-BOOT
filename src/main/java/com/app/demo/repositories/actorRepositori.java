@@ -9,5 +9,5 @@ import com.app.demo.models.actorModel;
 
 @Repository
 public interface ActorRepositori extends CrudRepository<actorModel, Long> {
-    public abstract ArrayList<actorModel> findByPrioridad(Integer prioridad);
+    //public abstract ArrayList<actorModel> findByfirst_name(String first_name);
 }

@@ -30,9 +30,9 @@ public class actorServices {
         return actorRepositori.findById(id);
     }
 
-    public ArrayList<actorModel> obtenerPorPrioridad(Integer prioridad){
-        return actorRepositori.findByPrioridad(prioridad);
-    }
+    // public ArrayList<actorModel> obtenerPorPrioridad(String first_name){
+    //     return actorRepositori.findByfirst_name(first_name);
+    // }
 
     public Boolean eliminarActor(Long id){
         try {
