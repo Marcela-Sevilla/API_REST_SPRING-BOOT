@@ -33,4 +33,13 @@ public class actorServices {
     public ArrayList<actorModel> obtenerPorPrioridad(Integer prioridad){
         return actorRepositori.findByPrioridad(prioridad);
     }
+
+    public Boolean eliminarActor(Long id){
+        try {
+            actorRepositori.deleteById(id);
+            return true;
+        } catch (Exception err) {
+            return false;
+        }
+    }
 }
